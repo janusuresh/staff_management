@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/teacherList.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="row">
+            <div class="col-sm-1">
+                <img class="image" src="/IMAGES/tnlogo.png" alt="TBOE">
+            </div>
+            <div class="cols">
+                <div class="titleDiv">
+                    <h2>TAMILNADU BOARD OF EDUCATION</h2>
+                    <h4>TEACHERS MAINTANENCE PORTAL</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a style="text-decoration:none;color:white;">HOME</a></li>
+            <li><a style="text-decoration:none;color:white;">INSTITUTIONS</a></li>
+            <li><a style="text-decoration:none;color:white;">MY PROFILE</a></li>
+            <li><a href="userLogin.html" style="text-decoration:none;color:white;">LOGIN</a></li>
+            <li><a style="text-decoration:none;color:white;">CONTACT</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="information">
+        <section>
+            <img src="/IMAGES/profile.jpeg" class="image-conatainer" height="100px" width="100px" style=" margin-top: 8%;">
+        </section>
+        <section class="info" style="display:flex">
+            <section style="width:55%;">
+                <ul>
+                    <li>INSTITUTION NAME : KONGU ENGINEERING COLLEGE</li>
+                    <li>ADDRESS : PERUNDURAI, ERODE</li>
+                    <li>TOTAL FACULTIES : 50 </li>
+                </ul>
+            </section>
+            <section class="contacts" style="width:30%;">
+                <ul>
+                    <li>CONTACT : ADMINCEO</li>
+                    <li>MAIL ID : kongu@gmail.com</li>
+                    <li>MB.NO : 044-12345678 </li>
+                </ul>
+            </section>
+        </section>
+    </div>
+    <br>
+    <div class="search" style="border-radius: 12px;width:500px;margin-left:50%;">
+        <input type="text" id="myinput" class="form-control searching" placeholder="Search Name,ID" aria-label="Search" aria-describedby="search-addon" />
+    </div>
+    <br>
+    <table class="table table-striped record">
+        <tr style="background-color:#2B9FF3;color:white;">
+            <th>ID</th>
+            <th>NAME</th>
+            <th>DOMAIN</th>
+
+        </tr>
+        <tbody id="tablesearch">
+            <tr>
+                <td>1</td>
+                <td>MALLIGA S</td>
+                <td>PROFESSOR</td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="teacher1Profile.html" style="text-decoration:none;color:black;">RAJALAKSHMI R R</a></td>
+                <td>PROFESSOR</td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>SHANTI S</td>
+                <td>ASST.PROFESSOR</td>
+
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>SAGANA C</td>
+                <td>ASST.PROFESSOR</td>
+
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>DEVENDRAM R</td>
+                <td>ASST.PROFESSOR</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+    <script>
+        $(document).ready(function() {
+            $("#myinput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#tablesearch tr").filter(function() {
+                    $(this).toggle($(this).text()
+                        .toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

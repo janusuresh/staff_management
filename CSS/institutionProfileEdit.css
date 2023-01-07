@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: white;
+}
+
+.navbar {
+    width: 98.9%;
+    height: 20%;
+    position: relative;
+    z-index: 2;
+    margin-top: 8.5%;
+}
+
+.row {
+    margin-top: -9%;
+    background-color: #2B9FF3;
+}
+
+img.image {
+    height: 80px;
+    width: 75px;
+    border-radius: 60%;
+    margin-left: 1%;
+    margin-top: 18%;
+}
+
+.titleDiv {
+    margin-top: 2%;
+}
+
+.titleDiv>h2 {
+    color: white;
+    font-weight: 700;
+}
+
+.titleDiv>h4 {
+    color: white;
+    font-weight: 500;
+}
+
+.nav {
+    background-color: #2B9FF3;
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 1%;
+    margin-top: -5%;
+    position: relative;
+    z-index: 5;
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul>li {
+    float: left;
+    padding-right: 6%;
+    padding-left: 6%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.information {
+    display: flex;
+    margin-left: 4%;
+    width: 90%;
+}
+
+.info {
+    margin-left: 2%;
+    border-radius: 10px;
+    padding: 0.8%;
+    font-size: 15px;
+    font-weight: 600;
+    height: 200px;
+}
+
+.contacts {
+    border: 3px solid #2B9FF3;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-right: 3%;
+    height: 150px;
+    margin-top: 1%;
+}
+
+.fa-solid {
+    margin-left: 80%;
+}
+
+.table.record {
+    padding: 2%;
+    border: 3px solid #D9D9D9;
+    border-top: none;
+    margin-left: 3%;
+    margin-right: 0%;
+    width: 95%;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+tbody {
+    border-radius: 20px;
+}
+
+table>tr>th>input.searching {
+    border: 1px solid #2B9FF3;
+    padding: 0.5%;
+    background: url("/IMAGES/download.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.searching::placeholder {
+    color: white;
+    font-weight: 700;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/adminregister.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="row">
+            <div class="col-sm-1">
+                <img src="/IMAGES/tnlogo.png" alt="TBOE">
+            </div>
+            <div class="cols">
+                <div class="titleDiv">
+                    <h2>TAMILNADU BOARD OF EDUCATION</h2>
+                    <h4>TEACHERs MAINTANENCE PORTAL</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="adminHome.html" style="text-decoration:none;color:white;">HOME</a></li>
+            <li><a style="text-decoration:none;color:white;">INSTITUTIONS</a></li>
+            <li><a style="text-decoration:none;color:white;">MY PROFILE</a></li>
+            <li><a href="normalHome.html" style="text-decoration:none;color:white;">LOGOUT</a></li>
+            <li><a style="text-decoration:none;color:white;">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="form">
+        <div class="header">
+            <h4>LOGIN</h4>
+        </div>
+        <br>
+        <div class="inputFields">
+            <input type="text" placeholder="USER" id="user" name="name" class="input">
+            <br><br>
+            <input type="email" placeholder="EMAILID" id="email" name="email" class="input">
+            <br><br>
+            <input type="password" placeholder="PASSWORD" id="pass" name="password" class="input"><br><br>
+        </div>
+        <div class="button">
+            <button class="btn" style="color:white;" onclick="myfunc()">REGISTER</button>
+        </div><br>
+    </div>
+    <script>
+        function myfunc() {
+            alert("Staff added successfully");
+        }
+    </script>
+</body>
+
+</html>
